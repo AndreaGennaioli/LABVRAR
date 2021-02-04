@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABVRAR</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="insider">
+                <div class="navbar">
+                    <div class="insider">
+                        <a href="./index.html" class="title">LABVRAR</a>
+                        <div class="right">
+                            <a class="navbar-link active">Home</a>
+                            <a href="./chisiamo.html" class="navbar-link">Chi Siamo</a>
+                            <a href="./progetti.html" class="navbar-link">Progetti</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bannercontainer">
+            <div class="banner">
+                <div class="insider">
+                </div>
+            </div>
+            <div class="banner-text">
+                <div class="insider">
+                    <h1>Realtà Virtuale ed Aumentata</h1>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="insider">
+                <div class="insider1">
+                    <h1 class="subtitle">Chi Siamo</h1>
+                    <p class="argument">Siamo un gruppo di appassionati di informatica, design e
+                        modellazione dell’Istituto ITIS E. Mattei Urbino e una delle poche risorse qui in Italia che si
+                        occupa di realtà virtuale e aumentata. In questo sito puoi trovare tutti i nostri progetti ed
+                        altre varie informazioni su LABVRAR. <a href="./chisiamo.html">Continua a leggere...</a></p>
+                    <br>
+                    <br>
+                    <br>
+                    <h1 class="subtitle">Progetti</h1>
+                    <p class="argument">Ecco tutti i nostri progetti:</p>
+                    <div class="progetti">
+                        <div class="card first">
+                            <div class="card-img vr">
+                            </div>
+                            <div class="container-card">
+                                <h3><b>Realtà Virtuale</b></h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, atque error sequi
+                                    doloribus nostrum debitis, dolore, quas blanditiis deleniti quidem optio quam id?
+                                    Praesentium ratione amet illum repudiandae enim maxime. Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Vero a molestias itaque placeat qui iure odit voluptas
+                                    distinctio tempora ab perspiciatis earum, praesentium ipsum aliquid repudiandae?
+                                    Esse optio corrupti beatae?</p>
+                            </div>
+                            <div class="buttons">
+                                <a class="button">VEDI</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img ar">
+                            </div>
+                            <div class="container-card">
+                                <h3><b>Realtà Aumentata</b></h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, atque error sequi
+                                    doloribus nostrum debitis, dolore, quas blanditiis deleniti quidem optio quam id?
+                                    Praesentium ratione amet illum repudiandae enim maxime. Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Vero a molestias itaque placeat qui iure odit voluptas
+                                    distinctio tempora ab perspiciatis earum, praesentium ipsum aliquid repudiandae?
+                                    Esse optio corrupti beatae?</p>
+                            </div>
+                            <div class="buttons">
+                                <a class="button">VEDI</a>
+                            </div>
+                        </div>
+                        <div class="card last">
+                            <div class="card-img vr">
+                            </div>
+                            <div class="container-card">
+                                <h3><b>Realtà Virtuale</b></h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, atque error sequi
+                                    doloribus nostrum debitis, dolore, quas blanditiis deleniti quidem optio quam id?
+                                    Praesentium ratione amet illum repudiandae enim maxime. Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Vero a molestias itaque placeat qui iure odit voluptas
+                                    distinctio tempora ab perspiciatis earum, praesentium ipsum aliquid repudiandae?
+                                    Esse optio corrupti beatae?</p>
+                            </div>
+                            <div class="buttons">
+                                <a class="button">VEDI</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="insider">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+    <script>
+        var actual = 0;
+        var last = 0;
+        $(function () {
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 50) {
+                    $(".navbar").addClass("scroll");
+                } else {
+                    $(".navbar").removeClass("scroll");
+                }
+                /* actual = $(window).scrollTop();
+                if (actual < last) {
+                    var sample_section_top = $('.header').css('background-position').replace('%', '').replace('px', '').replace('px', '')
+                        .replace('%', '').split(' ');
+                    console.log(sample_section_top);
+                    $('.header').css({
+                        'background-position': sample_section_top[0] + 'px ' + ((parseInt(sample_section_top[1].replace('px', '')) + 10))
+                            .toString() + 'px'
+                    });
+                } else {
+                    var sample_section_top = $('.header').css('background-position').replace('%', '').replace('px', '').replace('px', '')
+                        .replace('%', '').split(' ');
+                    console.log(sample_section_top);
+                    $('.header').css({
+                        'background-position': sample_section_top[0] + 'px ' + ((parseInt(sample_section_top[1].replace('px', '')) - 10))
+                            .toString() + 'px'
+                    }); 
+                }
+                last = $(window).scrollTop() */
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
