@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABVRAR</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="insider">
+                <div class="navbar">
+                    <div class="insider">
+                        <a href="/" class="title">LABVRAR</a>
+                        <div class="right">
+                            <a class="navbar-link active">Home<div class="navbar-link-bar"></div></a>
+                            <a href="/chisiamo" class="navbar-link">Chi Siamo<div class="navbar-link-bar"></div></a>
+                            <a href="/progetti" class="navbar-link">Progetti<div class="navbar-link-bar"></div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bannercontainer">
+            <div class="banner">
+                <div class="insider">
+                </div>
+            </div>
+            <div class="banner-text">
+                <div class="insider">
+                    <h1>Realtà Virtuale ed Aumentata</h1>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="insider">
+                <div class="insider1">
+                    <h1 class="subtitle">Chi Siamo</h1>
+                    <p class="argument">Siamo un gruppo di appassionati di informatica, design e
+                        modellazione dell’Istituto ITIS E. Mattei Urbino e una delle poche risorse qui in Italia che si
+                        occupa di realtà virtuale e aumentata. In questo sito puoi trovare tutti i nostri progetti ed
+                        altre varie informazioni su LABVRAR. <a href="./chisiamo">Continua a leggere...</a></p>
+                    <br>
+                    <div class="progetti">
+                        <div class="card">
+
+                            <img class="card-img" src="https://hobbyquotidiano.com/wp-content/uploads/2019/10/visore-VR-featured.jpg" alt="">
+                            <div class="container-card">
+                                <h3><b>Realtà Virtuale</b></h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, atque error sequi
+                                    doloribus nostrum debitis, dolore, quas blanditiis deleniti quidem optio quam id?
+                                    Praesentium ratione amet illum repudiandae enim maxime. Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Vero a molestias itaque placeat qui iure odit voluptas
+                                    distinctio tempora ab perspiciatis earum, praesentium ipsum aliquid repudiandae?
+                                    Esse optio corrupti beatae?</p>
+                            </div>
+                            <div class="buttons">
+                                <a class="button">VEDI</a>
+                            </div>
+
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img"src="https://images.theconversation.com/files/245627/original/file-20181114-194494-1p82jkx.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" alt="">
+                            <div class="container-card">
+                                <h3><b>Realtà Aumentata</b></h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, atque error sequi
+                                    doloribus nostrum debitis, dolore, quas blanditiis deleniti quidem optio quam id?
+                                    Praesentium ratione amet illum repudiandae enim maxime. Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Vero a molestias itaque placeat qui iure odit voluptas
+                                    distinctio tempora ab perspiciatis earum, praesentium ipsum aliquid repudiandae?
+                                    Esse optio corrupti beatae?</p>
+                            </div>
+                            <div class="buttons">
+                                <a class="button">VEDI</a>
+                            </div>
+
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img" src="https://hobbyquotidiano.com/wp-content/uploads/2019/10/visore-VR-featured.jpg" alt="">
+                            <div class="container-card">
+                                <h3><b>Realtà Virtuale</b></h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, atque error sequi
+                                    doloribus nostrum debitis, dolore, quas blanditiis deleniti quidem optio quam id?
+                                    Praesentium ratione amet illum repudiandae enim maxime. Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Vero a molestias itaque placeat qui iure odit voluptas
+                                    distinctio tempora ab perspiciatis earum, praesentium ipsum aliquid repudiandae?
+                                    Esse optio corrupti beatae?</p>
+                            </div>
+                            <div class="buttons">
+                                <a class="button">VEDI</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="insider">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+    <script>
+        var actual = 0;
+        var last = 0;
+        $(function () {
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 50) {
+                    $(".navbar").addClass("scroll");
+                } else {
+                    $(".navbar").removeClass("scroll");
+                }
+                /* actual = $(window).scrollTop();
+                if (actual < last) {
+                    var sample_section_top = $('.header').css('background-position').replace('%', '').replace('px', '').replace('px', '')
+                        .replace('%', '').split(' ');
+                    console.log(sample_section_top);
+                    $('.header').css({
+                        'background-position': sample_section_top[0] + 'px ' + ((parseInt(sample_section_top[1].replace('px', '')) + 10))
+                            .toString() + 'px'
+                    });
+                } else {
+                    var sample_section_top = $('.header').css('background-position').replace('%', '').replace('px', '').replace('px', '')
+                        .replace('%', '').split(' ');
+                    console.log(sample_section_top);
+                    $('.header').css({
+                        'background-position': sample_section_top[0] + 'px ' + ((parseInt(sample_section_top[1].replace('px', '')) - 10))
+                            .toString() + 'px'
+                    }); 
+                }
+                last = $(window).scrollTop() */
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

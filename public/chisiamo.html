@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABVRAR</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="insider">
+                <div class="navbar">
+                    <div class="insider">
+                        <a href="/" class="title">LABVRAR</a>
+                        <div class="right">
+                            <a href="/" class="navbar-link">Home<div class="navbar-link-bar"></div></a>
+                            <a class="navbar-link active">Chi Siamo<div class="navbar-link-bar"></div></a>
+                            <a href="/progetti" class="navbar-link">Progetti<div class="navbar-link-bar"></div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bannercontainer">
+            <div class="banner">
+                <div class="insider">
+                </div>
+            </div>
+            <div class="banner-text">
+                <div class="insider">
+                    <h1>Chi Siamo</h1>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="insider">
+                <div class="insider1">
+                    <p style="text-align: justify;">Una delle attuali frontiere dell’informatica applicata anche ai sistemi mobile (soprattutto con l’avvento delle connessioni a banda larga) e delle tecnologie di modellazione digitali 3D, tipiche dei prodotti desktop di ultima generazione, è la cosiddetta Realtà Virtuale (da ora VR, ovvero Virtual Reality). Questa nuova tecnologia, utilizzata fino a qualche anno fa esclusivamente da potenti workstations di calcolo, è oggi alla portata della grande utenza grazie alla notevole diffusione sul mercato consumer di personal computer e dispositivi mobile sempre più potenti e sempre meno costosi.<br>
+                        Il termine “Realtà Virtuale” è utilizzato comunemente per tutte le tecniche e le tecnologie digitali create dal computer. Da un punto di vista tecnico, però, si può parlare di VR solo per particolari tipi di applicazioni che prevedono una simulazione interattiva nella quale l’utente può osservare immagini calcolate in tempo reale (si parla di “Real Time”) dal calcolatore, secondo l’evento deciso dall’osservatore. Tramite un sistema di visualizzazione, l’utente è così in grado di interagire con un vero e proprio “Mondo Virtuale” in cui, oltre all’esplorazione spaziale in 3D, è possibile manipolare oggetti, cioè muoverli, smontarli, interrogarli e farli funzionare. Stessa interazione è quella offerta dalle applicazioni per mobile in realtà aumentata 3D dove un modello ricostruito viene contestualizzato in un ambiente reale riprodotto sullo schermo di un tablet o di uno smartphone. Il punto di forza di tali tecniche è proprio l’elevata interattività che si realizza mediante la creazione di sistemi di visualizzazione più o meno immersivi e dispositivi interfacciabili al visualizzatore per
+                        l’interazione audio, video e sensoriale.<br>
+                        Un nuovo campo di applicazione delle tecniche di Virtual Reality e Augmented Reality e in generale di tutte le tecnologie digitali comprese quelle per smatphone è quello della didattica museale e, in generale, dei beni culturali.<br>
+                        L’idea primaria è che tali tecniche possano offrire al visitatore che entra in un Museo un utile e spesso spettacolare supporto cognitivo per osservare, studiare e capire gli oggetti, gli ambienti e i quadri in mostra. Presupposto essenziale all’uso della VR, è la presenza di una struttura informatica ipermediale e interattiva, generalmente costituita da terminali (normali PC), postazioni hardware, totem e teatri virtuali, che permetta ad uno o più utenti di poter accedere, in maniera non sequenziale, alla consultazione di un alto numero di informazioni sul materiale collezionato sotto forma di suoni, testi, fotografie, immagini in movimento, simulazioni virtuali ed esperienze dimostrative. Quanto ai contenuti essi possono essere organizzati in percorsi multimediali aventi ciascuno un diverso grado di approfondimento
+                        (multilivello), secondo l’itinerario culturale più consono ai desideri ed alle curiosità dell’utente.<br>
+                        Con l’avvento poi di Internet e dei sistemi multimediali, molti musei hanno raccolto la sfida della globalizzazione realizzando ciascuno un proprio sito WEB e sperimentando in esso nuove metodologie di presentazione delle loro attività e collezioni. Le forme di comunicazione in VR vanno dalla gestione di scene bidimensionali e tridimensionali mediante “applet” (java) interattive, a tecnologie che consentono di 'immergersi' e navigare all'interno di ambienti ricreati tramite ricostruzioni fotografiche a 360° (sia in ambienti aperti che chiusi) fino ad analoghe tecniche per visionare da diversi punti di vista oggetti e dettagli in 3D.<br>
+                        Questo progetto si propone di fare diversi percorsi di ricerca e sviluppo di applicazioni
+                        multimediali, anche in VR e AR, per creare percorsi ed eventi all’interno di importanti musei e collezioni museali della città di Urbino, come il palazzo ducale di Urbino e l’annessa Galleria Nazionale delle Marche e la cappella di San Giovanni Battista sempre ad Urbino.<br>
+                        Tali percorsi saranno sviluppati in diversi moduli di un progetto PON presentato e vinto che  partiranno dalla conoscenza approfondita delle opere e delle loro specificità, della loro storia e dell’importanza iconografica ed artistica.<br>
+                        Le informazioni verranno rielaborate e riproposte attraverso applicativi web per pc e smartphone e attraverso applicazioni multimediali in 3D.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="insider">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+    <script>
+        var actual = 0;
+        var last = 0;
+        $(function () {
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 50) {
+                    $(".navbar").addClass("scroll");
+                } else {
+                    $(".navbar").removeClass("scroll");
+                }
+                /* actual = $(window).scrollTop();
+                if (actual < last) {
+                    var sample_section_top = $('.header').css('background-position').replace('%', '').replace('px', '').replace('px', '')
+                        .replace('%', '').split(' ');
+                    console.log(sample_section_top);
+                    $('.header').css({
+                        'background-position': sample_section_top[0] + 'px ' + ((parseInt(sample_section_top[1].replace('px', '')) + 10))
+                            .toString() + 'px'
+                    });
+                } else {
+                    var sample_section_top = $('.header').css('background-position').replace('%', '').replace('px', '').replace('px', '')
+                        .replace('%', '').split(' ');
+                    console.log(sample_section_top);
+                    $('.header').css({
+                        'background-position': sample_section_top[0] + 'px ' + ((parseInt(sample_section_top[1].replace('px', '')) - 10))
+                            .toString() + 'px'
+                    }); 
+                }
+                last = $(window).scrollTop() */
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

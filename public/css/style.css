@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins';
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+}
+
+.header {
+    position: fixed;
+    z-index: 2;
+    height: 75px;
+    width: 100%;
+    margin: 0;
+    font-weight: bold;
+}
+
+.bannercontainer {
+    position: fixed;
+    height: 400px;
+    width: 100%;
+    margin: 0;
+    background-blend-mode: 50%;
+    background: linear-gradient(#0062ff, #fff 90%);
+}
+
+.header .insider {
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1000;
+    height: 60px;
+    width: 100%;
+    background: transparent;
+    padding: 0;
+    -webkit-transition: all ease-out .25s;
+    -moz-transition: all ease-out .25s;
+    -o-transition: all ease-out .25s;
+    transition: all ease-out .25s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .insider {
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.scroll {
+    background-color: #0062ff;
+    box-shadow: 0px 1px 10px black;
+}
+
+@media only screen and (max-width: 1024px) {
+    .insider1 {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
+
+.content {
+    position: relative;
+    padding: 0 0 100px 0;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .insider {
+    height: 100%;
+    box-shadow: 0px -0.1px 1px black;
+    background-color: #fff;
+    margin-top: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.content .insider .insider1 {
+    background-color: #fff;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.navbar .insider img {
+    height: 25px;
+}
+
+.footer {
+    bottom: 0;
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.banner-text .insider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff
+}
+
+.header .title {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 0;
+    text-decoration: none;
+}
+
+.header .right {
+    display: flex;
+    margin-left: auto;
+}
+
+.header .navbar-link {
+    font-size: 15px;
+    margin:0;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.header .navbar-link {
+    margin-top: 5px !important;
+}
+
+.navbar-link-bar {
+    background-color: transparent;
+    height: 5px;
+    border-radius: 8px;
+    width: 0px !important;
+    flex-basis: 1px;
+    transition: all ease-out .25s;
+}
+
+.header .navbar-link:hover .navbar-link-bar {
+    flex-basis: 100%;
+    width: 110%;
+    background-color: #fff;
+}
+.header .active:hover .navbar-link-bar {
+    background-color: transparent !important;
+}
+
+.navbar-link.active {
+    color: rgb(146, 146, 146);
+}
+
+.navbar-link.active:hover {
+    cursor: default;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    position: fixed;
+    opacity: 0.4;
+    background-repeat: repeat;
+    background-image: url("../img/banner.jpg");
+    background-position: 50% 0px;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    color: #000 !important;
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progetti {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.progetti>.card {
+    margin: auto;
+    margin-top: 10px
+}
+
+.first {
+    margin-left: 0 !important;
+}
+
+.last {
+    margin-right: 0 !important;
+}
+
+.card {
+    display: grid;
+    padding: 15px;
+}
+.subtitle {
+    margin-block-end: 5px;
+}
+.argument {
+    text-align: justify;
+    margin-block-start: 0;
+}
+
+.card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+}
+
+.card:hover {
+/*     transform: translateY(-10px); */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container-card {
+    padding: 2px 16px;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.card .button {
+    font-weight: bold;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    border: 4px solid #0062ff;
+    transition: 0.3s;
+    background-color: #0062ff;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.card .button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: #000
+}

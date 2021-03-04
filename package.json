@@ -1,0 +1,22 @@
+{
+  "name": "labvrar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreaGennaioli/LABVRAR.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreaGennaioli/LABVRAR/issues"
+  },
+  "homepage": "https://github.com/AndreaGennaioli/LABVRAR#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
